@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=CyperEdge for A15 ( EXPERIMENTAL )
+kernel.string=CyberEdge for A15 ( EXPERIMENTAL )
 do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=a71
-device.name2=A71
+device.name1=ginkgo
+device.name2=xiaomiredminote8
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -50,7 +50,7 @@ if isTimRom; then
 
     ui_print " » Custom ROM recognition: Tim's Signature ";
     ui_print " » Initiating vibration fix deployment "
-    ui_print " » Executing CyperEdge flash....";
+    ui_print " » Executing CyberEdge flash....";
 
     split_boot;
     patch_cmdline initcall_blacklist initcall_blacklist=
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Executing CyperEdge flash....";
+    ui_print " » Executing CyberEdge flash....";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Executing CyperEdge flash....";
+    ui_print " » Executing CyberEdge flash....";
 
     dump_boot;
     write_boot;
