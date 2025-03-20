@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=CyperEdge for A11-A15 ( EXPERIMENTAL )
+kernel.string=CyperEdge for A15 ( EXPERIMENTAL )
 do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=begonia
-device.name2=begoniain
+device.name1=a71
+device.name2=A71
 supported.versions=
 supported.patchlevels=
 '; } # end properties
