@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=AkameKernel for A15 ( EXPERIMENTAL )
+kernel.string=CyberEdge Nethunter for N900 LOS-7.1 ( EXPERIMENTAL )
 do.devicecheck=1
 do.modules=0
 do.systemless=0
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=ginkgo
-device.name2=xiaomiredminote8
+device.name1=ha3g
+device.name2=n900
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Executing AkameKernel flash....";
+    ui_print " » Executing CyberEdge flash....";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Executing AkameKernel flash....";
+    ui_print " » Executing CyberEdge flash....";
 
     dump_boot;
     write_boot;
